@@ -1,4 +1,5 @@
 fips_begin_lib(freetype2)
+	add_definitions(-DFT2_BUILD_LIBRARY)
 	include_directories(
 		freetype2/include
 		freetype2/src/truetype
