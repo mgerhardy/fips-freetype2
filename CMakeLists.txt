@@ -1,6 +1,14 @@
 fips_begin_lib(freetype2)
-	include_directories(freetype2/include)
-
+	include_directories(
+		freetype2/include
+		freetype2/src/truetype
+		freetype2/src/sfnt
+		freetype2/src/autofit
+		freetype2/src/smooth
+		freetype2/src/raster
+		freetype2/src/psaux
+		freetype2/src/psnames
+	)
 	fips_files(
 		freetype2/src/autofit/autofit.c
 		freetype2/src/base/ftadvanc.c
