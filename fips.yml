@@ -1,0 +1,16 @@
+#
+# fips-freetype2
+#
+---
+exports:
+    header-dirs:
+        - freetype2/include
+        - freetype2/src/truetype
+        - freetype2/src/sfnt
+        - freetype2/src/autofit
+        - freetype2/src/smooth
+        - freetype2/src/raster
+        - freetype2/src/psaux
+        - freetype2/src/psnames
+    modules :
+        freetype2: .
