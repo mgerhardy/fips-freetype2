@@ -47,3 +47,7 @@ fips_begin_lib(freetype2)
 	)
 	fips_vs_disable_warnings(4312)
 fips_end_lib()
+
+if (FIPS_WINDOWS)
+    target_compile_definitions(freetype2 PRIVATE _CRT_SECURE_NO_WARNINGS)
+endif()
