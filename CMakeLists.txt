@@ -2,61 +2,40 @@ fips_begin_lib(freetype2)
 	add_definitions(-DFT2_BUILD_LIBRARY)
 	include_directories(
 		freetype2/include
-		#freetype2/src/truetype
-		#freetype2/src/sfnt
-		#freetype2/src/autofit
-		#freetype2/src/smooth
-		#freetype2/src/raster
-		#freetype2/src/psaux
-		#freetype2/src/psnames
 	)
 	fips_files(
 		freetype2/src/autofit/autofit.c
-		#freetype2/src/base/ftadvanc.c
 		freetype2/src/base/ftbase.c
 		freetype2/src/base/ftbbox.c
 		freetype2/src/base/ftbdf.c
 		freetype2/src/base/ftbitmap.c
-		#freetype2/src/base/ftcalc.c
 		freetype2/src/base/ftcid.c
-		#freetype2/src/base/ftdbgmem.c
 		freetype2/src/base/ftdebug.c
 		freetype2/src/base/ftfstype.c
 		freetype2/src/base/ftgasp.c
-		#freetype2/src/base/ftgloadr.c
 		freetype2/src/base/ftglyph.c
 		freetype2/src/base/ftgxval.c
 		freetype2/src/base/ftinit.c
-		#freetype2/src/base/ftlcdfil.c
 		freetype2/src/base/ftmm.c
-		#freetype2/src/base/ftobjs.c
 		freetype2/src/base/ftotval.c
-		#freetype2/src/base/ftoutln.c
 		freetype2/src/base/ftpatent.c
 		freetype2/src/base/ftpfr.c
-		#freetype2/src/base/ftrfork.c
-		#freetype2/src/base/ftsnames.c
-		#freetype2/src/base/ftstream.c
 		freetype2/src/base/ftstroke.c
 		freetype2/src/base/ftsynth.c
 		freetype2/src/base/ftsystem.c
-		#freetype2/src/base/fttrigon.c
 		freetype2/src/base/fttype1.c
-		#freetype2/src/base/ftutil.c
 		freetype2/src/base/ftwinfnt.c
-		#freetype2/src/base/ftxf86.c
 		freetype2/src/bdf/bdf.c
 		freetype2/src/bzip2/ftbzip2.c
 		freetype2/src/cache/ftcache.c
 		freetype2/src/cff/cff.c
-		#freetype2/src/cid/type1cid.c
+		freetype2/src/cid/type1cid.c
 		freetype2/src/gzip/ftgzip.c
 		freetype2/src/lzw/ftlzw.c
 		freetype2/src/pcf/pcf.c
 		freetype2/src/pfr/pfr.c
 		freetype2/src/psaux/psaux.c
 		freetype2/src/pshinter/pshinter.c
-		#freetype2/src/psnames/psmodule.c
 		freetype2/src/psnames/psnames.c
 		freetype2/src/raster/raster.c
 		freetype2/src/sfnt/sfnt.c
