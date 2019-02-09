@@ -51,3 +51,7 @@ fips_end_lib()
 if (FIPS_WINDOWS)
     target_compile_definitions(freetype2 PRIVATE _CRT_SECURE_NO_WARNINGS)
 endif()
+
+if (FIPS_GCC)
+    target_compile_options(freetype2 PRIVATE -Wno-implicit-fallthrough)
+endif()
